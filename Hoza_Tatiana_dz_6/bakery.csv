@@ -1,0 +1,6 @@
+
+python add_sale.py 5978,5
+python add_sale.py 8914,3
+python add_sale.py 7879,1
+python add_sale.py 1573,7
+python show_sales.py
