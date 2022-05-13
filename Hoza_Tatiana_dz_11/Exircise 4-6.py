@@ -1,9 +1,9 @@
 class OfficeEquipment:
     def __init__(self):
-        self.my_dict = {}
+        self.my_list = []
 
     def __add__(self, other):
-        self.my_dict.setdefault(other.group_name(), []).append(other)
+        self.my_list.append(other)
 
 class Equipment:
     def __init__(self, name, year, price):
@@ -49,7 +49,5 @@ scaner = Scaner('9', 'Artec 3D', '2020', '1500')
 OfficeEquipment.__add__(scaner)
 printer = Printer('15', 'HP Laser 107a', '2016', '800')
 OfficeEquipment.__add__(printer)
-print(OfficeEquipment.my_dict)
-OfficeEquipment.extract('Scaner')
-print()
-print(OfficeEquipment.my_dict)
+print(OfficeEquipment.my_list)
+print(OfficeEquipment.my_list)
